@@ -1,16 +1,94 @@
+<?php $menu = "index";   ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Gardener - Gardening Website Template</title>
+    <title>พีทีดับบลิว เทคโนโลยี รับออกแบบ-สร้าง ระบบอัตโนมัติ Jig & Fixture และเครื่องจักรกลทุกชนิด ตามลูกค้าต้องการ รับเขียนโปรแกรม PLC, SCADA,PC Window Base รับออกแบบสร้าง Line การผลิตแบบอัตโนมัติ</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="บริษัท พีทีดับบลิว เทคโนโลยี จำกัด รับออกแบบ-สร้าง ระบบอัตโนมัติ Jig & Fixture และเครื่องจักรกลทุกชนิด ตามลูกค้าต้องการ รับเขียนโปรแกรม PLC, SCADA,PC Window Base รับออกแบบสร้าง Line การผลิตแบบอัตโนมัติ" name="description">
 
     <?php include("link.php");  ?>
 
 </head>
+<style>
+    .index-about-title h3 {}
+
+    .index-about-content p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .index-about-content li {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .relative .card {
+        position: relative;
+    }
+
+    .relative .card {
+        overflow: hidden;
+    }
+
+
+    .relative .card img {
+        transform: scale(1.1);
+        -webkit-transition: all 0.5s ease-in-out;
+        -khtml-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .relative:hover .card img {
+        transform: scale(1);
+        -webkit-transition: all 0.5s ease-in-out;
+        -khtml-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+    }
+
+    .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    @media only screen and (max-width: 390px) {
+        .index-about-title h3{
+            font-size: calc(1.2rem + .6vw);
+        }
+        .title-slider h1{
+            font-size:  10px;
+        }
+    }
+
+    @media only screen and (max-width: 414px) {
+        /* .index-about-title h3{
+            font-size: calc(1.2rem + .6vw);
+        } */
+        .title-slider h1{
+            font-size: calc(1.3rem + .6vw);
+        }
+    }
+</style>
 
 <body>
     <!-- Spinner Start -->
@@ -21,34 +99,12 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark text-light px-0 py-2">
-        <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <span class="fa fa-phone-alt me-2"></span>
-                    <span>+012 345 6789</span>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <span class="far fa-envelope me-2"></span>
-                    <span>info@example.com</span>
-                </div>
-            </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center mx-n2">
-                    <span>Follow Us:</span>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php include("top_bar.php");   ?>
     <!-- Topbar End -->
 
 
     <!-- Navbar Start -->
-   <?php include("navbar.php");   ?>
+    <?php include("navbar.php");   ?>
     <!-- Navbar End -->
 
 
@@ -65,24 +121,26 @@
                     <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                <i class="fa fa-times text-primary"></i>
+                                <i class="fas fa-map-marker-alt text-primary"></i>
                             </div>
                             <div class="ps-3">
                                 <h4>Address</h4>
-                                <span>55/7 Moo1 T.Klong7  Klongluang Pathumtani 12120</span>
+                                <span>55/7 Moo1 T.Klong7 Klongluang Pathumtani 12120</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
                     <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                        <div class="d-flex">
+                        <div class="d-flex" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
                             <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                <i class="fa fa-users text-primary"></i>
+                                <i class="fas fa-envelope text-primary"></i>
                             </div>
                             <div class="ps-3">
                                 <h4>Email</h4>
-                                <span>samrithbo@ptwtechnology.com</span>
+                                <span><a href="mailto:samrithbo@ptwtechnology.com">samrithbo@ptwtechnology.com</a></span>
+                                <br>
+                                <span><a href="mailto:ptw_tech@yahoo.com">ptw_tech@yahoo.com</a></span>
                             </div>
                         </div>
                     </div>
@@ -94,8 +152,12 @@
                                 <i class="fa fa-phone text-primary"></i>
                             </div>
                             <div class="ps-3">
-                                <h4>Mobile</h4>
-                                <span>063-365-3563</span>
+                                <h4>Tel</h4>
+                                <span><a href="tel:02-152 5827">02-152 5827</a></span>
+                                <br>
+                                <span><a href="tel:02-159 00715">02-159 00715</a></span>
+                                <br>
+                                <span><a href="tel:02-159 0716">02-159 0716</a></span>
                             </div>
                         </div>
                     </div>
@@ -109,411 +171,65 @@
     <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="row g-5 align-items-end">
-                <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/about.jpg">
-                </div>
-                <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
-                    <h1 class="display-1 text-primary mb-0">25</h1>
-                    <p class="text-primary mb-4">Year of Experience</p>
-                    <h1 class="display-5 mb-4">We Make Your Home Like A Garden</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
-                </div>
-                <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row g-5">
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <div class="border-start ps-4">
-                                <i class="fa fa-award fa-3x text-primary mb-3"></i>
-                                <h4 class="mb-3">Award Winning</h4>
-                                <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <div class="border-start ps-4">
-                                <i class="fa fa-users fa-3x text-primary mb-3"></i>
-                                <h4 class="mb-3">Dedicated Team</h4>
-                                <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="index-about-title">
+                <h3 class="mb-5 text-center">บริษัท พีทีดับบลิว เทคโนโลยี จำกัด</h3>
+            </div>
+            <div class="index-about-content">
+                <p>
+                    ก่อตั้งเมื่อ พ.ศ 2547 ทุนจดทะเบียน :3,000,000 บาท
+                <p>
+                    สินค้าและบริการ :
+                </p>
+                <p>
+                    <li>รับออกแบบ-สร้าง ระบบอัตโนมัติ</li>
+                </p>
+                <p>
+                    <li> Jig & Fixture และเครื่องจักรกลทุกชนิด ตามลูกค้าต้องการ</li>
+                </p>
+                <p>
+                    <li> รับเขียนโปรแกรม PLC, SCADA,PC Window Base</li>
+                </p>
+                <p>
+                    <li>
+                        รับออกแบบสร้าง Line การผลิตแบบอัตโนมัติ
+                    </li>
+                </p>
+                </p>
+                <p>
+                    พื้นที่ทำงาน : 390 ตร.ม. พนักงาน : แอดมิน 4 คน วิศวกร 5 คน ช่างเทคนิค 12 คน
+                </p>
             </div>
         </div>
     </div>
     <!-- About End -->
 
 
-    <!-- Facts Start -->
-    <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Happy Clients</span>
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Garden Complated</span>
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Dedicated Staff</span>
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Awards Achieved</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Facts End -->
-
-
-    <!-- Features Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="fs-5 fw-bold text-primary">Why Choosing Us!</p>
-                    <h1 class="display-5 mb-4">Few Reasons Why People Choosing Us!</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row g-4 align-items-center">
-                        <div class="col-md-6">
-                            <div class="row g-4">
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
-                                    <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
-                                        <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                                            <i class="fa fa-check fa-3x text-primary"></i>
-                                        </div>
-                                        <h4 class="mb-0">100% Satisfaction</h4>
-                                    </div>
-                                </div>
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
-                                    <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
-                                        <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                                            <i class="fa fa-users fa-3x text-primary"></i>
-                                        </div>
-                                        <h4 class="mb-0">Dedicated Team</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
-                            <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
-                                <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                                    <i class="fa fa-tools fa-3x text-primary"></i>
-                                </div>
-                                <h4 class="mb-0">Modern Equipment</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Features End -->
-
-
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-bold text-primary">Our Services</p>
-                <h1 class="display-5 mb-5">Services That We Offer For You</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Landscaping</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Pruning plants</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Irrigation & Drainage</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-4.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-4.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Garden Maintenance </h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-5.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-8.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Green Technology</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-6.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-2.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Urban Gardening</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-
-    <!-- Quote Start -->
-    <div class="container-fluid quote my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-2.jpg">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
-                        <h1 class="display-5 text-center mb-5">Get A Free Quote</h1>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="gname" placeholder="Gurdian Name">
-                                    <label for="gname">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control bg-light border-0" id="gmail" placeholder="Gurdian Email">
-                                    <label for="gmail">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="cname" placeholder="Child Name">
-                                    <label for="cname">Your Mobile</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="cage" placeholder="Child Age">
-                                    <label for="cage">Service Type</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control bg-light border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary py-3 px-4" type="submit">Submit Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Quote End -->
-
-
-    <!-- Projects Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-bold text-primary">Our Projects</p>
-                <h1 class="display-5 mb-5">Some Of Our Wonderful Projects</h1>
-            </div>
-            <div class="row wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-12 text-center">
-                    <ul class="list-inline rounded mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">All</li>
-                        <li class="mx-2" data-filter=".first">Complete Projects</li>
-                        <li class="mx-2" data-filter=".second">Ongoing Projects</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row g-4 portfolio-container">
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-1.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Landscaping</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-2.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Pruning plants</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-3.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Irrigation & Drainage</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-4.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Garden Maintenance</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-5.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Green Technology</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-6.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Urban Gardening</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Projects End -->
-
 
     <!-- Team Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-bold text-primary">Our Team</p>
-                <h1 class="display-5 mb-5">Dedicated & Experienced Team Members</h1>
+            <div class="border-start border-5 border-primary ps-4 wow fadeInUp mb-3" data-wow-delay="0.1s">
+                <h1 class="py-3">CUSTOMIZEAutomation Machine / Line</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item rounded">
-                        <img class="img-fluid" src="img/team-1.jpg" alt="">
-                        <div class="team-text">
-                            <h4 class="mb-0">Doris Jordan</h4>
-                            <p class="text-primary">Landscape Designer</p>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
+                    <div class="relative">
+                        <div class="team-item rounded card">
+                            <img class="img-fluid" src="images/index/1.jpg" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item rounded">
-                        <img class="img-fluid" src="img/team-2.jpg" alt="">
-                        <div class="team-text">
-                            <h4 class="mb-0">Johnny Ramirez</h4>
-                            <p class="text-primary">Garden Designer</p>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
+                    <div class="relative">
+                        <div class="team-item rounded card">
+                            <img class="img-fluid" src="images/index/2.jpg" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded">
-                        <img class="img-fluid" src="img/team-3.jpg" alt="">
-                        <div class="team-text">
-                            <h4 class="mb-0">Diana Wagner</h4>
-                            <p class="text-primary">Senior Gardener</p>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
+                    <div class="relative">
+                        <div class="team-item rounded card">
+                            <img class="img-fluid" src="images/index/3.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -523,105 +239,103 @@
     <!-- Team End -->
 
 
-    <!-- Testimonial Start -->
+
+    <!-- Team Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="fs-5 fw-bold text-primary">Testimonial</p>
-                    <h1 class="display-5 mb-5">What Our Clients Say About Us!</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
-                    <a class="btn btn-primary py-3 px-4" href="">See More</a>
-                </div>
-                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="testimonial-item">
-                            <img class="img-fluid rounded mb-3" src="img/testimonial-1.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
+            <div class="border-start border-5 border-primary ps-4 wow fadeInUp mb-3" data-wow-delay="0.1s">
+                <h1 class="py-3">MEDICAL Platform Machine</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="relative">
+                        <div class="team-item rounded card">
+                            <img class="img-fluid" src="images/index/4.jpg" alt="">
                         </div>
-                        <div class="testimonial-item">
-                            <img class="img-fluid rounded mb-3" src="img/testimonial-2.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="relative">
+                        <div class="team-item rounded card">
+                            <img class="img-fluid" src="images/index/5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="relative">
+                        <div class="team-item rounded card">
+                            <img class="img-fluid" src="images/index/6.jpg" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->
+    <!-- Team End -->
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Services</h4>
-                    <a class="btn btn-link" href="">Landscaping</a>
-                    <a class="btn btn-link" href="">Pruning plants</a>
-                    <a class="btn btn-link" href="">Urban Gardening</a>
-                    <a class="btn btn-link" href="">Garden Maintenance</a>
-                    <a class="btn btn-link" href="">Green Technology</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
 
-
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright py-4">
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+            <div class="border-start border-5 border-primary ps-4 wow fadeInUp mb-3" data-wow-delay="0.1s">
+                <h1 class="py-3">Assembly JIG & FIXTURES</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="relative">
+                        <div class="team-item rounded card">
+                            <img class="img-fluid" src="images/index/7.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="relative">
+                        <div class="team-item rounded card">
+                            <img class="img-fluid" src="images/index/8.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="relative">
+                        <div class="team-item rounded card">
+                            <img class="img-fluid" src="images/index/9.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Copyright End -->
+    <!-- Team End -->
 
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
+        <h1 class="text-center my-3 text-white">INTRODUCTION</h1>
+        <div class="container py-5">
+
+
+
+            <!-- <iframe width="100%" height="700" src="https://www.youtube.com/embed/WSzSPHaUGlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+            <div class="videoWrapper">
+                <iframe width="460" height="315" src="https://www.youtube.com/embed/WSzSPHaUGlM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <?php include("footer.php"); ?>
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg  btn-lg-square rounded-circle back-to-top" style="background-color: #0e4194 ;color:#fff;"><i class="bi bi-arrow-up"></i></a>
 
-  <?php  include("js.php"); ?>
+    <?php include("js.php"); ?>
 
 </body>
 

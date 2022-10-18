@@ -39,6 +39,10 @@ h6,
     font-weight: 500 !important;
 }
 
+body {
+    font-family: 'Prompt', sans-serif;
+}
+
 
 /*** Spinner ***/
 
@@ -117,7 +121,7 @@ h6,
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: #0e4194;
 }
 
 .navbar .dropdown-toggle::after {
@@ -183,8 +187,8 @@ h6,
     width: 3rem;
     height: 3rem;
     border-radius: 3rem;
-    background-color: var(--primary);
-    border: 10px solid var(--primary);
+    background-color: #0e4194;
+    border: 10px solid #0e4194;
 }
 
 @media (max-width: 768px) {
@@ -201,7 +205,7 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(rgba(15, 66, 41, .6), rgba(15, 66, 41, .6)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(15, 66, 41, .6), rgba(15, 66, 41, .6)), url(../../../../images/product1/1.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -516,7 +520,7 @@ h6,
 
 .copyright {
     color: var(--light);
-    background: #072A19;
+    background: #040404
 }
 
 .copyright a {
